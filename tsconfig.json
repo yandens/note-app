@@ -1,0 +1,31 @@
+{
+  "include": [
+    "src/**/*",
+    "src/express-ext.d.ts",
+    "eslint.config.js",
+    "package.json"
+  ],
+  "exclude": ["**/node_modules", "**/.*/"],
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "esnext",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "verbatimModuleSyntax": true,
+    "incremental": true,
+    "composite": true,
+    "paths": {
+      "$libs/*": ["libs/*"],
+      "$middlewares/*": ["middlewares/*"],
+      "$services/*": ["services/*"],
+      "$routes/*": ["routes/*"],
+      "$routes": ["routes"],
+      "$schema": ["schema/*"]
+    },
+    "baseUrl": "./src",
+    "outDir": "./build"
+  }
+}
