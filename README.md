@@ -3,7 +3,7 @@
 ## 1. Build and Start Docker Container
 
 ```sh
-docker run --name wwwaste-mongo -d -p 27017:27017 mongo:7 --replSet rs0
+docker run --name wwwaste-mongo -d -p 27017:27017 mongo:latest --replSet rs0
 docker exec -it wwwaste-mongo mongosh --eval "rs.initiate({_id:'rs0',members:[{_id:0,host:'localhost:27017'}]})"
 ```
 
