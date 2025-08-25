@@ -35,4 +35,5 @@ pnpm dev
 
 - Ensure Docker is installed and running on your system.
 - Update `.env` with your configuration before starting the server.
+- The api documentation is on `/documentation` path
 
